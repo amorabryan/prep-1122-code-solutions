@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      padding-left: 125px;
+      color: green;
+    }
+
+    .container {
+      max-width:992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    h2 {
+      width: 1000px;
+      margin: auto;
+      text-align: justify;
+      padding-left: 125px;
+      padding-bottom:25px;
+    }
+
+    h3 {
+    color: olive;
+    width: 300px;
+    border: 15px lightskyblue;
+    border-inline-color: gray;
+    border-right-color: white;
+    border-style: double;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25%;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>The Halo Series</h1>
+
+  <h2>The game takes place in a 26th century version of Earth, where the United Nations Space Command
+    (UNSC) develops a secret program for the development of supersoldiers called
+    the <a style="color: green">Spartans</a> to help against the war between Earth and The Covenant.</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="Halo CE.jpg" alt="Halo CE">
+        <h3>Halo: Combat Evolved</h3>
+        <p>In <i>Halo CE</i>, the Master Chief fights the alien species called
+          <u style="color: blue">The Covenant</u>, who are trying to use the ringworld named
+          <q>Halo</q>, believed to be a weapon, to destroy Earth. Organisms called <i>The Flood</i> inhabit the
+          ring and can take over deceased bodies of any species. It is up to the Master Chief to eliminate the
+          Flood by destroying the Halo installation.
+        </p>
+      </div>
+      <div class="column">
+        <img src="Halo 2.jpg" alt="Halo 2">
+        <h3>Halo 2</h3>
+        <p>In <i>Halo 2</i> Covenant commander, stripped of his status and rank, is given a new role in the fight
+          against the UNSC, called the <u style="color: blue">Arbiter</u>. After the Covenant attack an Earth base
+          again, the UNSC discover a new Halo installation, and the Master Chief needs to destry this one as well.
+          The Arbiter is exiled from the Covenant and the honor guard of the Prophets, the leaders of the Covenant,
+          deploy Tartarus, leader of the Brutes, to eliminate the Arbiter and the Covenant that aided the rebellion
+          against the Covenant.
+        </p>
+      </div>
+      <div class="column">
+        <img src="Halo 3.jpg" alt="Halo 3"
+        width="350"
+        height="500">
+        <h3>Halo 3</h3>
+        <p>The Master Chief and the Arbiter join forces to stop the Covenant from activating a Forerunner artifact
+          that can aid in the destruction of the UNSC if not stopped. After the Covenant is stopped, the humans and
+          Elites go through a portal and find a structure in space called the Ark, which can activate the
+          Halo installations remotely. The Master Chief and Arbiter must stop the Ark from being activated.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
